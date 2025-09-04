@@ -45,6 +45,8 @@ button {
   letter-spacing: 1.25px;
 
   transition: 0.2s;
+
+  cursor: help;
 }
 
 .no-wrap {
