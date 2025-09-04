@@ -1,0 +1,127 @@
+@font-face {
+  font-family: Rep-Ak-Gro-Uni;
+  src: url(Rep-Ak-Gro-Uni_Light.woff);
+}
+
+body {
+  font-family: Rep-Ak-Gro-Uni, sans-serif;
+  line-height: 1.2;
+  letter-spacing: 1.25px;
+  color: white;
+
+  background-color: #6e260e;
+  position: fixed;
+}
+
+h1,
+p {
+  font-size: 22px;
+}
+
+#p-i {
+  text-indent: 44px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.1s;
+}
+
+a:hover,
+button:hover {
+  color: cyan;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+::selection {
+  background: cyan;
+  color: #fff;
+}
+
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.left-container,
+.right-container {
+  padding: 24px;
+}
+
+.left-container {
+  width: 66%;
+}
+
+.right-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 34%;
+  height: 100vh;
+}
+
+button {
+  display: inline-block;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  outline: inherit;
+
+  text-align: left;
+}
+
+.v-popup {
+  top: 0;
+}
+
+.f-popup {
+  bottom: 0;
+}
+
+.v-popup,
+.f-popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  width: 34%;
+  border-radius: 48px;
+  box-shadow: 4px 2px 18px 0px rgba(0, 0, 0, 0.35);
+  z-index: 100;
+  margin: 24px;
+  padding: 24px;
+}
+
+.show {
+  display: block;
+}
+
+/*** RESPONSIVE ***/
+
+@media (max-width: 900px) {
+  .left-container,
+  .right-container {
+    width: 100%;
+  }
+
+  .popups {
+    bottom: 0;
+  }
+
+  .v-popup,
+  .f-popup {
+    width: calc(100% - 48px);
+    top: inherit;
+    bottom: inherit;
+  }
+}
