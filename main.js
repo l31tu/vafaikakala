@@ -5,6 +5,7 @@ const vTag = document.querySelector(".v-popup");
 toggleVTag.addEventListener("click", () => {
   vTag.classList.toggle("show");
   fTag.classList.remove("show");
+  wTag.classList.remove("show");
 });
 
 const toggleFTag = document.querySelector(".toggle-f");
@@ -13,6 +14,16 @@ const fTag = document.querySelector(".f-popup");
 toggleFTag.addEventListener("click", () => {
   fTag.classList.toggle("show");
   vTag.classList.remove("show");
+  wTag.classList.remove("show");
+});
+
+const toggleWTag = document.querySelector(".toggle-w");
+const wTag = document.querySelector(".w-popup");
+
+toggleWTag.addEventListener("click", () => {
+  wTag.classList.toggle("show");
+  vTag.classList.remove("show");
+  fTag.classList.remove("show");
 });
 
 //Change Background
