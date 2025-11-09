@@ -86,7 +86,8 @@ button {
   height: 100vh;
 }
 
-.v-popup {
+.v-popup,
+.w-popup {
   top: 0;
 }
 
@@ -95,7 +96,8 @@ button {
 }
 
 .v-popup,
-.f-popup {
+.f-popup,
+.w-popup {
   display: none;
   position: fixed;
   left: 0;
@@ -129,7 +131,8 @@ button {
   }
 
   .v-popup,
-  .f-popup {
+  .f-popup,
+  .w-popup {
     width: calc(100% - 48px);
     top: inherit;
     bottom: inherit;
