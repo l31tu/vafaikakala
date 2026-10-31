@@ -64,9 +64,18 @@ $("#va").on("click", function (e) {
   });
 });
 
+$("#faikakala").on("click", function (e) {
+  window.goatcounter.count({
+    path: "click-faikakala",
+    title: "Click Faikakala",
+    event: true,
+  });
+});
+
 window.goatcounter.count({
   path: function (p) {
     return "click-va-" + p;
+    return "click-faikakala-" + p;
   },
   event: true,
 });
