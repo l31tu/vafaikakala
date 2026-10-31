@@ -1,4 +1,4 @@
-//Popups
+// Popups
 const toggleVTag = document.querySelector(".toggle-v");
 const vTag = document.querySelector(".v-popup");
 
@@ -53,3 +53,13 @@ function changeBground() {
   const color = colors[colorKeys[randKey]];
   document.body.style.backgroundColor = color;
 }
+
+// Analytics
+
+$("#va").on("click", function (e) {
+  window.goatcounter.count({
+    path: "click-va",
+    title: "Click Vā",
+    event: true,
+  });
+});
