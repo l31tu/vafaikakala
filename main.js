@@ -26,7 +26,7 @@ toggleWTag.addEventListener("click", () => {
   fTag.classList.remove("show");
 });
 
-//Change Background
+// Change Background
 document.addEventListener("click", changeBground);
 var colors = {
   taupe: "#483C32",
@@ -72,10 +72,19 @@ $("#faikakala").on("click", function (e) {
   });
 });
 
+$("#whakahokikorero").on("click", function (e) {
+  window.goatcounter.count({
+    path: "click-whakahokikorero",
+    title: "Click Whakahoki Kōrero",
+    event: true,
+  });
+});
+
 window.goatcounter.count({
   path: function (p) {
     return "click-va-" + p;
     return "click-faikakala-" + p;
+    return "click-whakahokikorero-" + p;
   },
   event: true,
 });
