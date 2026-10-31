@@ -63,3 +63,10 @@ $("#va").on("click", function (e) {
     event: true,
   });
 });
+
+window.goatcounter.count({
+  path: function (p) {
+    return "click-va-" + p;
+  },
+  event: true,
+});
